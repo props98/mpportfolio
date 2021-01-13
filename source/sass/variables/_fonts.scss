@@ -67,3 +67,31 @@
   font-style: normal;
   font-stretch: normal;
 }
+
+// Миксины основные шрифты
+
+@mixin mainRegular {
+  font-family: 'Gilroy', sans-serif;
+}
+
+@mixin mainSemibold {
+  font-family: 'Gilroy-Semibold', sans-serif;
+}
+
+@mixin mainExtrabold {
+  font-family: 'Gilroy-Extrabold', sans-serif;
+}
+
+@mixin mainHeavy {
+  font-family: 'Gilroy-Heavy', sans-serif;
+}
+
+// Миксины дополнительные шрифты (декоративные)
+
+@mixin decorBold {
+  font-family: 'Playfair Display Bold', serif;
+}
+
+@mixin decorBlack {
+  font-family: 'Playfair Display Black', serif;
+}

@@ -7,29 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section class="main-page">
+  <header class="main-page">
 
-    <div class="main-page__icon">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__link"><a href="#">Maxim Park</a></li>
-          <li class="main-nav__link"><a href="#">branding</a></li>
-          <li class="main-nav__link"><a href="#">motion</a></li>
-          <li class="main-nav__link"><a href="#">retouch</a></li>
-          <li class="main-nav__link"><a href="#">web</a></li>
-          <li class="main-nav__link"><a href="#">maximpark@gmail.com</a></li>
-        </ul>
+      <nav class="nav nav__menu">
+        <input type="checkbox" class="nav nav__click" id="menu-cb"/>
+        <div class="nav__content">
+          <div class="nav__wrapper">
+            <a href="#" class="nav__link nav__link--contact">Maxim Park</a>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link nav__link--menu nav__link--green">branding</a></li>
+              <li class="nav__item"><a href="#" class="nav__link nav__link--menu nav__link--yellow">motion</a></li>
+              <li class="nav__item"><a href="#" class="nav__link nav__link--menu nav__link--orange">retouch</a></li>
+              <li class="nav__item"><a href="#" class="nav__link nav__link--menu nav__link--blue">web</a></li>
+            </ul>
+            <a href="#" class="nav__link nav__link--contact">maximpark@gmail.com</a>
+          </div>
+        </div>
+        <label class="nav__btn" for="menu-cb"></label>
       </nav>
-    </div>
 
     <!-- <div class="main-page__block">
-      <header class="header">
+      <div class="header">
         <nav class="header__nav-list">
           <a class="header__nav-link" href="#">Maxim Park</a>
           <a class="header__nav-link" href="#">about</a>
           <a class="header__nav-link" href="#">contacts</a>
         </nav>
-      </header>
+      </div>
   
       <h1 class="main-page__title">Portfolio</h1>
       <h2 class="main-page__subtitle">graphic-designer</h2>
@@ -53,11 +57,13 @@
       </div>
     </div> -->
 
-  </section>
+  </header>
 
   <!-- <header>
     <img src="https://via.placeholder.com/728x90.png?text=Main+banner" alt="">
   </header> -->
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
 </body>
 </html>
