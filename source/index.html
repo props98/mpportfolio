@@ -8,6 +8,7 @@
 </head>
 <body>
   <header class="main-page">
+    <div class="main-page__container">
 
       <nav class="nav nav__menu">
         <input type="checkbox" class="nav nav__click" id="menu-cb"/>
@@ -26,36 +27,68 @@
         <label class="nav__btn" for="menu-cb"></label>
       </nav>
 
-    <!-- <div class="main-page__block">
       <div class="header">
         <nav class="header__nav-list">
           <a class="header__nav-link" href="#">Maxim Park</a>
-          <a class="header__nav-link" href="#">about</a>
-          <a class="header__nav-link" href="#">contacts</a>
+          <div class="header__contacts">
+            <a class="header__nav-link header__nav-link--contacts" href="#">about</a>
+            <a class="header__nav-link header__nav-link--contacts" href="#">contacts</a>
+          </div>
         </nav>
       </div>
-  
-      <h1 class="main-page__title">Portfolio</h1>
-      <h2 class="main-page__subtitle">graphic-designer</h2>
-      <h2 class="main-page__subtitle">web-developer</h2>
-      
-      <div class="main-page__bottom">
-        <nav class="index-menu">
-          <ul class="index-menu__list">
-            <li class="index-menu__link"><a href="#">web</a></li>
-            <li class="index-menu__link"><a href="#">retouch</a></li>
-            <li class="index-menu__link"><a href="#">motion</a></li>
-            <li class="index-menu__link"><a href="#">branding</a></li>
-          </ul>
-        </nav>
-    
-        <ul class="social">
-          <li class="social__link"><a href="#">social icon</a></li>
-          <li class="social__link"><a href="#">social icon</a></li>
-          <li class="social__link"><a href="#">social icon</a></li>
-        </ul>
+
+      <div class="main-text">
+        <div class="main-text__wrapper">
+          <h1 class="main-text__title">Por<br>tfo<br>lio</h1>
+          <div class="main-text__sub-wrap">
+            <h2 class="main-text__subtitle">graphic-designer</h2>
+            <h2 class="main-text__subtitle">web-developer</h2>
+          </div>
+        </div>
       </div>
-    </div> -->
+
+      <div class="header-bottom">
+        <div class="header-bottom__wrapper">
+          <nav class="index-menu">
+            <ul class="index-menu__list">
+              <li class="index-menu__item"><a href="#" class="index-menu__link">branding</a></li>
+              <li class="index-menu__item"><a href="#" class="index-menu__link">motion</a></li>
+              <li class="index-menu__item"><a href="#" class="index-menu__link">retouch</a></li>
+              <li class="index-menu__item"><a href="#" class="index-menu__link">web</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="https://dribbble.com/" target="_blank" class="social__link">
+                  <svg width="13" height="13" class="icon">
+                    <title>icon: dribble</title>
+                    <use xlink:href="img/social-sprite.svg#drib"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://twitter.com/?lang=en" target="_blank" class="social__link">
+                  <svg width="15" height="15" class="icon">
+                    <title>icon: Github</title>
+                    <use xlink:href="img/social-sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                  <svg width="15" height="15" class="icon">
+                    <title>icon: Instagram</title>
+                    <use xlink:href="img/social-sprite.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </header>
 

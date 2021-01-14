@@ -71,19 +71,19 @@
 // Миксины основные шрифты
 
 @mixin mainRegular {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
 @mixin mainSemibold {
-  font-family: 'Gilroy-Semibold', sans-serif;
+  font-family: 'Gilroy-Semibold', 'Arial', sans-serif;
 }
 
 @mixin mainExtrabold {
-  font-family: 'Gilroy-Extrabold', sans-serif;
+  font-family: 'Gilroy-Extrabold', 'Arial', sans-serif;
 }
 
 @mixin mainHeavy {
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Gilroy-Heavy', 'Arial', sans-serif;
 }
 
 // Миксины дополнительные шрифты (декоративные)

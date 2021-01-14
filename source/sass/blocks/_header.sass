@@ -1,0 +1,21 @@
+.header
+  &__nav-list
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 30px 0
+  &__contacts
+    margin-left: auto
+    & > a
+      margin-left: 28px
+  &__nav-link
+    display: inline-block
+    +mainSemibold
+    text-decoration: none
+    color: $white
+    letter-spacing: 1px
+    font-size: 14px
+    padding: 15px
+    &--contacts
+      +mainRegular
+      font-size: 12px

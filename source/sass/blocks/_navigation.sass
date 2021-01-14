@@ -8,7 +8,7 @@
     width: auto
     height: 100%
     transform: translate3d(0, 0, 0)
-    background: #fff
+    background: $white
     // box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
 
   &__click
@@ -28,7 +28,7 @@
       width: 650px
   
   &__wrapper
-    padding-left: 280px
+    margin-left: 280px
 
   &__list
     position: relative
@@ -53,17 +53,17 @@
     height: 100%
     +mainExtrabold
     font-size: 36px
-    color: #000
+    color: $black
     text-decoration: none
     transform: rotateY(-70deg)
     opacity: 0
     transition: transform 0.8s cubic-bezier(0.48, 0.43, 0.7, 2.5), opacity 0.5s
     &--contact
       display: inline-block
+      padding: 10px 10px 10px 0
       +mainRegular
-      font-size: 18px
+      font-size: 17px
       margin-bottom: 50px
-      width: 140px
     &--menu
       &::before
         content: ''
@@ -77,13 +77,13 @@
       &:hover::before
         width: 100%
     &--green::before
-      background: #24FF00
+      background: $green
     &--yellow::before
-      background: #FFF62B
+      background: $yellow
     &--orange::before
-      background: #FF9900
+      background: $orange
     &--blue::before
-      background: #00F0FF
+      background: $blueLight
 
     
     .nav__click:checked ~ .nav__content &
@@ -114,14 +114,14 @@
       width: 40px
       height: 4px
       border-radius: 2px
-      background: #000
+      background: $black
       transform-origin: 50% 50%
       transition: transform 1.5s cubic-bezier(0.48, 0.43, 0.29, 1.3)
     &:before
       margin-bottom: 10px
     &:hover:before,
     &:hover::after
-      background: #444
+      background: $lightBlack
     
   .nav__click:checked ~ .nav__btn:before
     transform: translateY(7px) rotate(225deg)
