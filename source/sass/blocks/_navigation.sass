@@ -4,12 +4,14 @@
     align-items: center
     // overflow: hidden
     position: fixed
-    left: 0
+    left: -100px
     width: auto
     height: 100%
     transform: translate3d(0, 0, 0)
     background: $white
     // box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    .nav__click:checked &
+      padding-left: 300px
 
   &__click
     z-index: -1000
@@ -25,10 +27,10 @@
     transition: width 1s cubic-bezier(0.49, -0.3, 0.68, 1.23)
     .nav__click:checked ~ &
       transition: width 1s cubic-bezier(0.48, 0.43, 0.29, 1.3)
-      width: 650px
+      width: 800px
   
   &__wrapper
-    margin-left: 280px
+    margin-left: 400px
 
   &__list
     position: relative
@@ -100,28 +102,31 @@
 
   &__btn
     position: absolute
-    right: -40px
+    right: -115px
     top: 50%
     transform: translateY(-50%)
     width: 80px
     height: 60px
     padding: 21px 20px
-    cursor: pointer    
+    cursor: pointer
+    transition: 0.8s ease-in-out
     &:before,
     &:after
       content: ''
       display: block
-      width: 40px
+      width: 30px
       height: 4px
       border-radius: 2px
       background: $black
       transform-origin: 50% 50%
-      transition: transform 1.5s cubic-bezier(0.48, 0.43, 0.29, 1.3)
+      transition: transform 1.2s cubic-bezier(0.48, 0.43, 0.29, 1.3)
     &:before
       margin-bottom: 10px
     &:hover:before,
     &:hover::after
       background: $lightBlack
+    .nav__click:checked ~ &
+      right: -45px
     
   .nav__click:checked ~ .nav__btn:before
     transform: translateY(7px) rotate(225deg)
